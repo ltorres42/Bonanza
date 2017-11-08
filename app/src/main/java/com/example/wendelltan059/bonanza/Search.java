@@ -48,6 +48,10 @@ public class Search extends AppCompatActivity {
     {
         this.keyword = keyword;
     }
+    public ArrayList<Integer> getResultArray()  {
+
+        return resultArray;
+    }
     private void searchForKeyword()
     {
         resultArray = new ArrayList<Integer>();
