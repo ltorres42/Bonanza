@@ -1,0 +1,517 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/bin/java -Didea.launcher.port=7534 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA 14.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/lib/tools.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Users/Luis/Documents/CCLoader/out/production/CCLoader:/Applications/IntelliJ IDEA 14.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain KeySearch
+What keyword or phrase are you looking for?
+NFIP
+linetext:	floods they are clearly catastrophic
+linetext:	traumatic events although they have also
+linetext:	been responsible for one of the most
+linetext:	memorable clips in the history of
+linetext:	broadcast news good morning well
+linetext:	obviously we're getting a nice break
+linetext:	from the rain but not the flooding this
+linetext:	is essentially
+linetext:	that's it fuck James Cameron and fuck
+linetext:	Titanic because that is now officially
+linetext:	the greatest boat disaster ever captured
+linetext:	on film it's over now floods were
+linetext:	everywhere this summer think of them as
+linetext:	the des paseo of natural disasters
+linetext:	persistent ubiquitous and absolutely no
+linetext:	fault of the Puerto Rican government and
+linetext:	floods are always threatening 90% of all
+linetext:	natural disasters in the US involve a
+linetext:	flood which is I assume the reason that
+linetext:	FEMA's website once referred to flooding
+linetext:	as America's number one natural hazard
+linetext:	exclamation mark which is a pretty weird
+linetext:	tone to take were describing something
+linetext:	horrible
+linetext:	it's like saying boils America's number
+linetext:	one staph infection or parks America's
+linetext:	number one place to die unnoticed
+linetext:	and floods are only going to get worse
+linetext:	due to climate change and I know that
+linetext:	there are people who will dispute that
+linetext:	and we just don't have time tonight to
+linetext:	litigate whether extreme weather events
+linetext:	are exacerbated by climate change so for
+linetext:	now let's just say yeah they just
+linetext:	definitely are I mean it is a
+linetext:	complicated issue and we may not have
+linetext:	definitive proof until the late 1980s
+linetext:	but but while floods are often referred
+linetext:	to as natural disasters the truth is the
+linetext:	damage they do is often to some extent
+linetext:	within our control because we have made
+linetext:	certain decisions that put and keep
+linetext:	people and property in the path of
+linetext:	flooding and that is what this story is
+linetext:	about and before we go any further let's
+linetext:	acknowledge that people live near water
+linetext:	for all sorts of reasons for some it's
+linetext:	where their families of limpid
+linetext:	generations or a necessity for the work
+linetext:	that they do or for others it's a luxury
+linetext:	and and living next to the water is
+linetext:	undoubtedly attractive despite the risks
+linetext:	like flooding or stepping on pointy
+linetext:	seashells or mistakenly giving a toasty
+linetext:	toe to a seagull without realizing that
+linetext:	that means that you will now spend the
+linetext:	rest of your life
+linetext:	haunted by a tostito addicted seagull
+linetext:	the point is whatever the reason to live
+linetext:	by the water
+linetext:	learning to offer fuck's sake you've got
+linetext:	to be kidding me I don't have any
+linetext:	Tostitos I've been telling you that for
+linetext:	six years look feetoes sorry the point
+linetext:	is the dangers of waterfront living are
+linetext:	real but many people like this man who
+linetext:	lives on the water in Tampa Bay feel the
+linetext:	benefits outweigh the risks mark knows
+linetext:	that life here is tenuous but he doesn't
+linetext:	dwell on it every morning when I walk
+linetext:	out to get the paper I see dolphins
+linetext:	frolicking in the bayou and Roseate
+linetext:	spoonbills walking around the edge of
+linetext:	the Bayou so tends to make you forget
+linetext:	about all those sorts of things sure I
+linetext:	can imagine that seeing a Roseate
+linetext:	Spoonbill would take your mind off
+linetext:	things because you're spending your
+linetext:	whole day trying to figure out how a
+linetext:	flamingo could have gotten it's stupid
+linetext:	bird face stuck into a panini press I'm
+linetext:	just saying even people who like birds
+linetext:	don't like this bird the Audubon Society
+linetext:	an organization whose entire purpose is
+linetext:	to champion birds says they are quote
+linetext:	gorgeous at a distance and bizarre up
+linetext:	close which is like the American Kennel
+linetext:	Club saying we celebrate all dogs and
+linetext:	honor them as man's best friend but the
+linetext:	dandy din Mont has a trash personality
+linetext:	and looks like a Scottie Fox Phil
+linetext:	Spector look if you are literally
+linetext:	overlooking a bar you like that guy you
+linetext:	are probably aware that flooding is a
+linetext:	risk but not every flood prone area is
+linetext:	directly along the coast and sometimes
+linetext:	aggressive development can exacerbate
+linetext:	the risk of flooding even considerably
+linetext:	inland just look at Houston which was
+linetext:	recently rocked by Harvey the metro
+linetext:	areas development has exploded one study
+linetext:	found the Houston area has added 25
+linetext:	percent more pavement over 15 years
+linetext:	replacing soil rich wetlands that could
+linetext:	absorb water with concrete covered
+linetext:	suburbia exactly and that made Harvey's
+linetext:	damage significantly worse concrete
+linetext:	isn't good at absorbing water that is
+linetext:	why people don't dry off at the beach by
+linetext:	rolling around in the parking lot
+linetext:	but but it's not just global warming or
+linetext:	unchecked growth that have put more
+linetext:	people in risky flood prone areas it's
+linetext:	also the fact that it's frequently only
+linetext:	possible for people to take that risk
+linetext:	because they have flood insurance just
+linetext:	look at buying the beach it's a house
+linetext:	hunters type show for people who want to
+linetext:	live near the water and one episode
+linetext:	featured two brothers named Mitch and
+linetext:	Daniel arguing over a particular beach
+linetext:	house which led to this exchange what do
+linetext:	you think about the island house Mitch
+linetext:	well I think there is a lot of good and
+linetext:	a lot of bad on it right awful stepped
+linetext:	into the beach can't be beat we are
+linetext:	really close to the water that's just
+linetext:	another thing that's got me concerned
+linetext:	well that's what insurance is for that's
+linetext:	what insurance is for that may be the
+linetext:	most reckless statement ever said on a
+linetext:	boat and I'm very much including I can
+linetext:	definitely make this shot work let's
+linetext:	beat these goals and Tostitos and don't
+linetext:	have any all I did was say the word get
+linetext:	out of here no touch detox no touch the
+linetext:	dogs but Mitch Lou Tostitos but but
+linetext:	Mitch Mitch isn't wrong that if they
+linetext:	bought that house they could get flood
+linetext:	insurance and surprisingly cheaply and
+linetext:	it's worth taking some time to
+linetext:	understand why that is the case because
+linetext:	unlike other forms of homeowners
+linetext:	insurance flood protection is actually
+linetext:	underwritten by the government through
+linetext:	the NFIP or National Flood Insurance
+linetext:	Program it started nearly 50 years ago
+linetext:	after historic floods wiped out many
+linetext:	people's homes in the 1960s and the
+linetext:	government back then realized that there
+linetext:	was a real problem insurance companies
+linetext:	wouldn't cover floods at an affordable
+linetext:	cost because it was too risky so because
+linetext:	of that the government was spending way
+linetext:	too much on disaster relief so they
+linetext:	stepped in and created the NFIP which
+linetext:	offered significantly discounted
+linetext:	insurance to encourage people to bite
+linetext:	and that sounds great but crucially the
+linetext:	aim at the time was not that people
+linetext:	would be staying in at-risk homes
+linetext:	permanently as the program's current
+linetext:	administrator explains they presumed
+linetext:	that if we told people they were at risk
+linetext:	they would move they presumed that over
+linetext:	the life of the program those discounts
+linetext:	wouldn't need to be continued and they
+linetext:	presumed they would need to be continued
+linetext:	because once people knew they had the
+linetext:	ridge
+linetext:	they would move out that has not proven
+linetext:	true no but of course it hasn't because
+linetext:	that's not how people work we will
+linetext:	gladly accept huge risks to our personal
+linetext:	safety for the sake of a discount so
+linetext:	that was the entire premise behind the
+linetext:	McDonald's dollar menu and that is just
+linetext:	one of the many flaws with how this
+linetext:	well-intentioned program was designed
+linetext:	because everything about it from who
+linetext:	participates to where the money goes to
+linetext:	the incentives it creates needs fixing
+linetext:	and let's start with the fact that
+linetext:	eligibility for the program is
+linetext:	determined through flood plain Maps you
+linetext:	are required to buy flood insurance if
+linetext:	you have a federally backed mortgage and
+linetext:	FEMA's maps show that you live in a
+linetext:	risky area unfortunately the mandate has
+linetext:	been poorly enforced meaning that lots
+linetext:	of people don't buy insurance who should
+linetext:	and the maps themselves can be both
+linetext:	out-of-date and wildly inaccurate in
+linetext:	fact just days before Harvey struck a
+linetext:	study of Houston area flood maps was
+linetext:	published and the results were alarming
+linetext:	over the course of a decade researchers
+linetext:	at Rice University and Texas A&M;
+linetext:	Galveston studied one section of
+linetext:	Southeast Harris County they found
+linetext:	FEMA's flood plain Maps missed about 75%
+linetext:	of the damages from the storms
+linetext:	seventy-five percent at that point you
+linetext:	might as well predict floods by having
+linetext:	blindfolded six-year-olds pin little
+linetext:	cardboard puddles onto city maps at
+linetext:	birthday parties but even if all the
+linetext:	maps were perfect there would be another
+linetext:	floor with the NFIP which is how its
+linetext:	administered you see typically the
+linetext:	government doesn't directly insure you
+linetext:	instead
+linetext:	it pays private insurance companies a
+linetext:	fee for every policy they sell but not
+linetext:	just that the federal government is then
+linetext:	responsible for covering any losses
+linetext:	which is a pretty fucking sweet deal for
+linetext:	those companies they take none of the
+linetext:	risk and yet they get all the rewards
+linetext:	but it gets even worse because they also
+linetext:	get paid for each claim they handle and
+linetext:	when frontline crunched some of the
+linetext:	numbers and presented them to inform
+linetext:	ahead of the program they found
+linetext:	something shocking
+linetext:	there was one number that really jumped
+linetext:	out with all the claims in the wake of
+linetext:	Sandy the profits were more than four
+linetext:	hundred million dollars because they're
+linetext:	handling a lot of claims that year and
+linetext:	they get they get make a lot of money
+linetext:	when they hand with
+linetext:	when a big storm hits then they make
+linetext:	more money yeah at the very time you
+linetext:	need them to make less money if anything
+linetext:	because because of the burden is gonna
+linetext:	be borne by the taxpayers they make it
+linetext:	killing that's true for insurance
+linetext:	companies the bigger the disaster the
+linetext:	more they stand to profit and that is a
+linetext:	business model not usually seen outside
+linetext:	of Nicolas Cage's career and while the
+linetext:	insurance industry may dispute exactly
+linetext:	how much profit they make the fact
+linetext:	remains that the government and the
+linetext:	taxpayer are definitely the ones eating
+linetext:	the losses which is one of the reasons
+linetext:	why even before these latest hurricanes
+linetext:	the program was twenty five billion
+linetext:	dollars in debt and there are not enough
+linetext:	Roseate spoonbills in the world to take
+linetext:	your mind off that and just to be clear
+linetext:	there are exactly enough Roseate
+linetext:	spoonbills in the world I'm just saying
+linetext:	do we all really need more of this
+linetext:	any kids come see the dirty pink
+linetext:	dinosaur is noisily devouring its young
+linetext:	and look there is a good argument to
+linetext:	make that helping people stay in their
+linetext:	homes after a disaster is what
+linetext:	government is for but remember a big
+linetext:	chunk of that money is just going to the
+linetext:	insurance companies and another
+linetext:	shockingly big chunk of that money goes
+linetext:	to very few homes for instance along the
+linetext:	Gulf Coast in Florida just 1% of
+linetext:	properties covered by the NFIP have
+linetext:	accounted for a quarter of flood claims
+linetext:	these are called the so called
+linetext:	repetitive loss properties now they are
+linetext:	homes that can flood over and over and
+linetext:	over again getting payments each and
+linetext:	every time and and some of them are
+linetext:	costing us a fortune just recently an
+linetext:	article in The Washington Post
+linetext:	highlighted a home in Pointe Coupee
+linetext:	Parish that has flooded 40 times while
+linetext:	the house is valued at just 56 thousand
+linetext:	dollars the NFIP is doled out nearly
+linetext:	four hundred thirty thousand dollars to
+linetext:	cover flood claims so that is just
+linetext:	stupid because if nothing else if your
+linetext:	house floods 40 times
+linetext:	mother nature is sending you a pretty
+linetext:	clear message and that message is hey
+linetext:	would you mind leaving some weird fish
+linetext:	would like to fuck in here now and some
+linetext:	parts of the country have particularly
+linetext:	extreme examples of this now you
+linetext:	remember Mitch and Daniel the pastel
+linetext:	death trap that they were looking at is
+linetext:	on a place called dolphin Island where
+linetext:	over the past two decades
+linetext:	homeowners are paid just nine point
+linetext:	three million dollars in premiums into
+linetext:	the NFIP but they've received seventy
+linetext:	two point two million dollars in
+linetext:	payments for their damaged homes it is
+linetext:	so bad that the island got written up by
+linetext:	Bloomberg under the headline law of
+linetext:	coastal living is draining us disaster
+linetext:	funds and at first glance we thought
+linetext:	hold on isn't that the exact same
+linetext:	eyesore on stilts that Mitch and Daniel
+linetext:	almost bought well the good news is it's
+linetext:	actually not the bad news is it's
+linetext:	literally the house next door and it was
+linetext:	also featured on a different episode of
+linetext:	buying the beach
+linetext:	right in the water it wasn't close to
+linetext:	the beach it was in the ocean the waves
+linetext:	are just right here it's literally in
+linetext:	the ocean
+linetext:	this is in
+linetext:	yeah it is insane but what's even crazy
+linetext:	is at the end of the episode they
+linetext:	decided to buy the house but even if you
+linetext:	were able to overlook the repetitive
+linetext:	loss properties which you shouldn't
+linetext:	there is another issue and that is that
+linetext:	nearly one out of every five homes
+linetext:	covered under the NFIP is a second home
+linetext:	and because the program isn't
+linetext:	means-tested the benefits frequently go
+linetext:	to some wealthy individuals vacation
+linetext:	homes one such property belonged to John
+linetext:	Stossel a Fox News personality and
+linetext:	partially hydrogenated Tom Selleck and
+linetext:	I'll let Stossel who really answers the
+linetext:	question what a Freddie Mercury quit
+linetext:	scene to become an assistant floor
+linetext:	manager at Men's Wearhouse I'll let him
+linetext:	tell you all about it because even he
+linetext:	knew it was ridiculous years ago I built
+linetext:	this beach house that's younger me there
+linetext:	the house was on the edge of the
+linetext:	Atlantic Ocean a risky place to build
+linetext:	but I built anyway cuz a federal program
+linetext:	guaranteed my investment eventually a
+linetext:	storm swept away my first floor but I
+linetext:	didn't lose a penny thanks I never
+linetext:	invited you there but you paid for my
+linetext:	new first floor okay so now Stossel is
+linetext:	clearly just baiting people because
+linetext:	under no circumstances does anyone want
+linetext:	to be funding the reconstruction of the
+linetext:	world's smuggest man's rickety sea
+linetext:	prison and there is lots to be confused
+linetext:	about they're not not least of which
+linetext:	that photo of stossel posing shirtless
+linetext:	in skin tight white swim trunks from
+linetext:	hundreds of feet away who took that
+linetext:	photo
+linetext:	it can't be another human who wanted it
+linetext:	so here's my guess I think that he put a
+linetext:	camera on a long delay timer then
+linetext:	sprinted for a full 45 seconds back to
+linetext:	the deck of his house whispering hurry
+linetext:	hurry hurry to himself the entire time
+linetext:	and gone in position just in time for
+linetext:	that photo to happen that is the only
+linetext:	scientifically possible explanation we
+linetext:	debated this the entire fucking week and
+linetext:	it's the only scenario that we can all
+linetext:	agree on
+linetext:	look if you choose to build something in
+linetext:	a risky place like John Stossel salt
+linetext:	battered bottoms only beach mistake you
+linetext:	should absolutely be allowed to do that
+linetext:	but you shouldn't expect the government
+linetext:	to repeatedly help you rebuild when
+linetext:	things inevitably go wrong however the
+linetext:	vast majority the vast majority here of
+linetext:	NFIP beneficiaries are not wealthy or
+linetext:	second home owners they often really
+linetext:	need this program and cannot afford for
+linetext:	it to go under and for those stuck in
+linetext:	repetitive loss properties it is easy
+linetext:	for anyone to just say they should move
+linetext:	they should just move but it's much more
+linetext:	difficult than that as this Kentucky
+linetext:	woman whose home has flooded repeatedly
+linetext:	will tell you we couldn't sell her house
+linetext:	who would want to buy a house with us
+linetext:	had this me repetitive floods and it who
+linetext:	would want to back us we have neighbors
+linetext:	that have had their houses up for sale
+linetext:	for two or three years and haven't even
+linetext:	had anyone come and view the house we
+linetext:	need a bath from from FEMA or from
+linetext:	whoever it is that is responsible for
+linetext:	this right and her decision to try and
+linetext:	leave that home could not have been easy
+linetext:	because you don't want to throw out the
+linetext:	baby with the flood water but at a
+linetext:	certain point the responsible thing to
+linetext:	do is to get a better more
+linetext:	water-resistant baby which is
+linetext:	incidentally also the title of Britain's
+linetext:	best-selling book on teaching children
+linetext:	to swim now unfortunately our by our
+linetext:	programs are hugely underfunded and
+linetext:	prohibitively slow it can take years for
+linetext:	buyouts to get approved by which point
+linetext:	homeowners have probably had to rebuild
+linetext:	their house at the government's expense
+linetext:	and it may have already flooded again so
+linetext:	essentially a government program that
+linetext:	was supposed to help people in flooded
+linetext:	homes is sometimes trapping them inside
+linetext:	them indefinitely and trapping people in
+linetext:	structurally unsound homes isn't what
+linetext:	the government is for it's what buying
+linetext:	the beach is for
+linetext:	there just has to be a better way here
+linetext:	and there are some key things that we
+linetext:	can do to improve this program we can do
+linetext:	things like means-tested and eventually
+linetext:	get rid of discounts for second hunks
+linetext:	and gradually increase the insurance
+linetext:	rates on some properties so that they
+linetext:	reflect actual risk unfortunately the
+linetext:	last time the Congress tried a major
+linetext:	reform of the NFIP with the
+linetext:	biggert-waters Act of 2012 the result
+linetext:	was that many people's rates skyrocketed
+linetext:	overnight and politicians were so
+linetext:	spooked by angry constituents they
+linetext:	significantly scaled back many of the
+linetext:	reforms and I'm not saying that this
+linetext:	will ever be politically easy because
+linetext:	even if you do properly fund and
+linetext:	streamline a buyout scheme there are
+linetext:	still going to be cases where people
+linetext:	just want to stay put right here in New
+linetext:	York there is a low line community
+linetext:	called Broad Channel where the streets
+linetext:	can flood twice a month its residents
+linetext:	fought against those rate increases a
+linetext:	few years ago and many of them have no
+linetext:	interest in leaving the neighborhoods to
+linetext:	great then this of my whole house got
+linetext:	destroyed by Sandy and ivory you know I
+linetext:	redid my whole house I do know people
+linetext:	like you're crazy you should move but
+linetext:	you're standing in water right now maybe
+linetext:	the people telling you to move we're
+linetext:	saying at the very least can you move up
+linetext:	five inches to dry land but the hard
+linetext:	truth here is even expensive
+linetext:	interventions are likely to only by that
+linetext:	community a little more time and people
+linetext:	in Broad Channel will eventually be
+linetext:	leaving whether it's by moving truck or
+linetext:	by boat because environmental conditions
+linetext:	are going to get worse heavy downpours
+linetext:	have increased in the last 50 years and
+linetext:	sea levels have been climbing steadily
+linetext:	and I'm not saying that that is because
+linetext:	of climate change
+linetext:	even though
+linetext:	just this precisely the NFIP is actually
+linetext:	two for reauthorization this December
+linetext:	and I would argue that it's time to take
+linetext:	another shot at serious thoughtful
+linetext:	reform because we're doubt it we have an
+linetext:	unstable unsustainable program that is
+linetext:	indirectly harming some of the people
+linetext:	that it was designed to help and I don't
+linetext:	have any type of joke relax I'm not here
+linetext:	for Tostitos really yeah hold on you can
+linetext:	talk of course CEOs can talk we just
+linetext:	choose to listen most of the time all
+linetext:	right
+linetext:	that's actually very nice and every word
+linetext:	you would say about flooding and you are
+linetext:	right I'm seated I'm a seagull yeah some
+linetext:	people in high-risk areas will need to
+linetext:	move and we should give them the help
+linetext:	that they can do that with right because
+linetext:	well leaving your home is hard being
+linetext:	forced out when it's uninhabitable is 10
+linetext:	times harder right and after all your
+linetext:	home isn't just walls and a roof it's
+linetext:	where the people you love uh-oh
+linetext:	see I'll call it that was absolutely
+linetext:	beautiful
+linetext:	yeah not bad for a flying beach rat oh
+linetext:	no no no no don't don't talk like that
+linetext:	about yourself no don't
+linetext:	it's okay I know it's true you know it's
+linetext:	true everybody watching knows it's true
+linetext:	Hey I eat french fries out of the
+linetext:	garbage yeah you're right you make a
+linetext:	good point you're absolutely disgusting
+linetext:	but but you know what I am truly sorry
+linetext:	for misjudging your motives in coming
+linetext:	here that's okay Johnny just one worth a
+linetext:	chore anything Jenny just Eidos fuck you
+linetext:	have any Tostitos get all your get the
+linetext:	fuck out of here
+linetext:	[Applause]
+145
+155
+208
+266
+278
+295
+321
+373
+423
+461
+
+Process finished with exit code 0
