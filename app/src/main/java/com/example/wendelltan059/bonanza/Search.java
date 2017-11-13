@@ -35,11 +35,6 @@ public class Search extends AppCompatActivity {
         startActivity(intent);
 
     }
-//    public static void main(String[] args) {
-//
-//        CCLoader myloader = new CCLoader("cc.txt");
-//
-//    }
     public Search()
     {
 
