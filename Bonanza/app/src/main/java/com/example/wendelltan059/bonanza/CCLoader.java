@@ -44,7 +44,7 @@ public class CCLoader {
 
             for (int i = 0; i < linetext.size(); i ++)
             {
-                System.out.println("timestamp:\t" + linetext.get(i));
+                System.out.println("linetext:\t" + linetext.get(i));
             }
         }
     }
@@ -95,9 +95,9 @@ public class CCLoader {
 
     }
 
-    public static void main(String[] args) {
-
-        CCLoader myloader = new CCLoader("cc.txt");
-
-    }
+//    public static void main(String[] args) {
+//
+//        CCLoader myloader = new CCLoader("cc.txt");
+//
+//    }
 }
