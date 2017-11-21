@@ -5,12 +5,18 @@ package com.example.wendelltan059.bonanza;
  */
 import java.util.*;
 import java.io.*;
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.os.Build;
+
 
 public class CCLoader {
     private ArrayList<String> timestamps;
     private ArrayList<String> linetext;
 
     private String sourcefile;
+
+    private Context mContext;
 
 
     public ArrayList<String> GetTimestamps()  {
@@ -52,12 +58,50 @@ public class CCLoader {
 
 
     private void LoadCC()  {
+
+        String line = null;
+
+        timestamps = new ArrayList<String>();
+        linetext = new ArrayList<String>();
+
+        Scanner s = new Scanner(mContext.getResources().openRawResource(R.raw.cc));
+
+        try {
+
+            while(s.hasNext())  {
+
+                line = s.nextLine();
+                timestamps.add(line);
+
+                line = s.nextLine();
+
+                linetext.add(line);
+
+
+            }
+
+
+        } finally{
+            s.close();
+        }
+
+
+
+    }
+
+
+
+
+
+
+    private void LoadCCold()  {
         String line = null;
 
         timestamps = new ArrayList<String>();
         linetext = new ArrayList<String>();
 
         try {
+
             FileReader fileReader = new FileReader(sourcefile);
 
             BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -88,9 +132,9 @@ public class CCLoader {
     }
 
 
-    public CCLoader(String filename)  {
-
+    public CCLoader(String filename, Context context)  {
         sourcefile = filename;
+        mContext = context;
         LoadCC();
 
     }

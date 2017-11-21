@@ -1,10 +1,14 @@
 package com.example.wendelltan059.bonanza;
 
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -13,13 +17,16 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerView;
 
+
 /**
  * Created by wendell.tan059 on 10/11/17.
  */
 
 public class Videos extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
-
+    EditText input;
+    String link;
+    String part2;
 
     public void setting (View view)
     {
@@ -35,6 +42,11 @@ public class Videos extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
     }
 
+    public Videos()
+    {
+
+    }
+
     private static final int RECOVERY_REQUEST = 1;
     private YouTubePlayerView youTubeView;
 
@@ -42,15 +54,24 @@ public class Videos extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.videos);
-
-        youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
-        youTubeView.initialize(Config.YOUTUBE_API_KEY, this);
     }
 
-    @Override
+    public void load(View v)
+    {
+        this.input = (EditText) findViewById(R.id.editText8);
+        this.link = input.getText().toString();
+        String [] parts = link.split("=");
+        part2 = parts[1];
+        youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
+        youTubeView.initialize(Config.YOUTUBE_API_KEY, this);
+        input.setText(part2);
+
+
+    }
+
     public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
         if (!wasRestored) {
-            player.cueVideo("NYGCSSP-XSo"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
+            player.cueVideo(String.valueOf(part2)); // Plays https://www.youtube.com/watch?v=NYGCSSP-XSo
         }
     }
 
@@ -75,4 +96,20 @@ public class Videos extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
     protected Provider getYouTubePlayerProvider() {
         return youTubeView;
     }
+
+    public String getID()
+    {
+        return this.part2;
+    }
+
+
+    public void searching (View view)
+    {
+
+        Intent intent = new Intent(Videos.this, Search.class);
+        intent.putExtra("key1", part2);
+        startActivity(intent);
+
+    }
+
 }

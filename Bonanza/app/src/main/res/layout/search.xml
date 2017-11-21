@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/upbutton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/enterbutton"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/arrow_up_float"
+        android:onClick="Search"
+        android:textIsSelectable="true"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textView14"
@@ -15,88 +30,35 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button25"
+        android:id="@+id/downbutton"
+        style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:layout_alignBottom="@+id/editText9"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:id="@+id/button26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/button25"
-        android:text="Back" />
+        android:layout_alignBaseline="@+id/upbutton"
+        android:layout_alignBottom="@+id/upbutton"
+        android:layout_toLeftOf="@+id/upbutton"
+        android:layout_toStartOf="@+id/upbutton"
+        android:background="@android:drawable/arrow_down_float"
+        android:onClick="Search"
+        android:textIsSelectable="true"
+        android:textSize="30sp" />
 
     <EditText
         android:id="@+id/editText9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="170dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="KeyWord"
-        android:layout_marginBottom="171dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/button26"
-        android:layout_toEndOf="@+id/button26" />
+        android:layout_toStartOf="@+id/enterbutton"
+        android:layout_toLeftOf="@+id/enterbutton" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/alert_dark_frame"
-        android:layout_marginBottom="80dp"
-        android:layout_above="@+id/button25"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Video"
-        android:textSize="30sp"
-        android:layout_above="@+id/imageView2"
-        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/button25"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium elementum dui, quis viverra est maximus eu. Proin vel velit sit amet tortor hendrerit ornare. Donec justo mi, laoreet ut tincidunt non, consectetur vel ex.Nulla tempus sit amet nisi quis mollis. Integer interdum, lorem et cursus volutpat, augue justo varius justo, quis viverra ligula velit vitae justo. Donec nec aliquet dolor. Vestibulum ullamcorper massa a sapien ultrices aliquet. Cras dignissim dui nec diam mollis, a malesuada dolor tincidunt. Praesent imperdiet ex iaculis nisl mattis finibus ut at dolor. Suspendisse luctus scelerisque dolor. Praesent eget lorem erat. Phasellus euismod sit."
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <android.support.v4.widget.NestedScrollView
-        android:id="@+id/scroll"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/button25"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </android.support.v4.widget.NestedScrollView>
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lineSpacingExtra="30sp"
-        android:text="^   v "
-        android:textSize="24sp"
-        android:layout_alignBaseline="@+id/editText9"
-        android:layout_alignBottom="@+id/editText9"
-        android:layout_toLeftOf="@+id/button25" />
 
     <Button
         android:id="@+id/button27"
@@ -118,13 +80,33 @@
         android:text="Account"
         android:onClick="account_setting"/>
 
-    <ImageButton
-        android:id="@+id/imageButton"
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="TextView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+        <!--android:layout_below="@+id/button25" -->
+
+    <Button
+        android:id="@+id/enterbutton"
+        style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/presence_audio_away"
-        android:layout_alignTop="@+id/editText9"
-        android:layout_toLeftOf="@+id/textView17"
-        android:layout_toStartOf="@+id/textView17" />
+        android:onClick="onFocusChange"
+        android:text="Enter"
+        android:layout_alignBottom="@+id/editText9"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/textView14"
+        />
 
 </RelativeLayout>

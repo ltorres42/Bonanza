@@ -14,45 +14,35 @@
         android:text="Videos"
         android:textSize="30sp" />
 
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_above="@+id/button21"
-        android:layout_toRightOf="@+id/button23"
-        android:layout_toEndOf="@+id/button23" />
-
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter Link Here"
         android:textSize="18sp"
-        android:layout_above="@+id/editText8"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginBottom="59dp"
+        android:layout_above="@+id/button21"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
 
     <Button
         android:id="@+id/button21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Audio to Text"
-        android:layout_marginBottom="82dp"
+        android:layout_marginBottom="80dp"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/button22"
-        android:layout_toStartOf="@+id/button22"
-        android:layout_marginRight="40dp"
-        android:layout_marginEnd="40dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/button22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Extract"
-        android:layout_below="@+id/editText8"
-        android:layout_toRightOf="@+id/textView12"
-        android:layout_toEndOf="@+id/textView12" />
+        android:layout_below="@+id/textView13"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/youtube_view"
@@ -74,9 +64,43 @@
         android:id="@+id/button24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
         android:text="Account"
-        android:onClick="account_setting"/>
+        android:onClick="account_setting"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button21"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="
+" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView12"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_below="@+id/textView13"
+        android:text="Load"
+        android:onClick="load"/>
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/play"
+        android:layout_alignRight="@+id/play"
+        android:layout_below="@+id/play"
+        android:text="Search"
+        android:onClick="searching"/>
+
+
 </RelativeLayout>
