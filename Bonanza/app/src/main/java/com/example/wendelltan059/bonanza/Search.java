@@ -8,8 +8,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.*;
 import android.util.Log;
+import java.util.Arrays;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -34,6 +39,7 @@ public class Search extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
     private ArrayList<String> timeStampsArray;
     String video;
     private searchFunctions setKeyword;
+    private getTime newTimeObject;
 
     private static final int RECOVERY_REQUEST = 1;
     private YouTubePlayerView youTubeView;
@@ -80,10 +86,31 @@ public class Search extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
                         keyword = edit_text.getText().toString();
                         setKeyword = new searchFunctions(keyword);
                         resultArray = setKeyword.searchForKeyword(textArray);
-                        TextView tView = (TextView) findViewById(R.id.textView17);
+                        TextView tView = (TextView) findViewById(R.id.mytextview);
+
+                        InputStream inputStream = getResources().openRawResource(R.raw.cc);
+                        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+
+                        String myText = "";
+                        int in;
+                        try {
+                            in = inputStream.read();
+                            while (in != -1)
+                            {
+                                byteArrayOutputStream.write(in);
+                                in = inputStream.read();
+                            }
+                            inputStream.close();
+
+                            myText = byteArrayOutputStream.toString();
+                        }catch (IOException e) {
+                            e.printStackTrace();
+                        }
+
+                        tView.setText(myText);
 
                         if(resultArray.isEmpty()){
-                            tView.setText("Keyword not found...");
+                            //tView.setText("Keyword not found...");
                             Button downButton = (Button) findViewById(R.id.downbutton);
                             downButton.setOnClickListener(new View.OnClickListener() {
 
@@ -104,7 +131,7 @@ public class Search extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
                         else {
                             //tView.setText(keyword);
                             resultIndex = 0;
-                            tView.setText(textArray.get(resultArray.get(resultIndex)));
+                            //tView.setText(textArray.get(resultArray.get(resultIndex)));
                             //skip down through keyword occurances
 
                             Button downButton = (Button) findViewById(R.id.downbutton);
@@ -112,10 +139,10 @@ public class Search extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
                                 @Override
                                 public void onClick(View view) {
-                                    TextView tView = (TextView) findViewById(R.id.textView17);
+                                    //TextView tView = (TextView) findViewById(R.id.textView17);
                                     //tView.setText("down button pressed");
                                     resultIndex = (resultIndex + 1) % resultArray.size();
-                                    tView.setText(textArray.get(resultArray.get(resultIndex)));
+                                    //tView.setText(textArray.get(resultArray.get(resultIndex)));
                                 }
 
                             });
@@ -126,10 +153,38 @@ public class Search extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
                                 @Override
                                 public void onClick(View v) {
-                                    TextView tView = (TextView) findViewById(R.id.textView17);
-                                    resultIndex = Math.abs(resultIndex - 1) % resultArray.size();
-                                    tView.setText(textArray.get(resultArray.get(resultIndex)));
-                                    //tView.setText("up button pressed");
+                                    //TextView tView = (TextView) findViewById(R.id.textView17);
+                                    if(resultIndex == 0)
+                                    {
+                                        resultIndex = resultArray.size()-1;
+                                        //tView.setText(textArray.get(resultArray.get(resultIndex)));
+                                    }
+                                    else
+                                    {
+                                        resultIndex = (resultIndex - 1);
+                                        //tView.setText(textArray.get(resultArray.get(resultIndex)));
+                                        //tView.setText("up button pressed");
+                                    }
+                                }
+                            });
+
+                            Button jumpTo = (Button) findViewById(R.id.jump);
+                            jumpTo.setOnClickListener(new View.OnClickListener() {
+
+                                @Override
+                                public void onClick(View v) {
+                                    newTimeObject = new getTime();
+                                    int time = newTimeObject.time(resultArray.get(resultIndex), timeStampsArray);
+                                    //call display video with time as the parameter here
+                                    //next two lines for testing and can be commented out after
+                                    //linking up
+                                    //String strTime = Integer.toString(time);
+                                    //TextView tView = (TextView) findViewById(R.id.textView17);
+                                    //tView.setText(strTime);
+                                    //tView.setText(timeStampsArray.get(resultIndex));
+                                    player.seekToMillis(time * 1000);
+//                                    int milliSeconds = (time * 1000);
+//                                   // player.loadVideo(video_ID, milliSeconds);
                                 }
                             });
                         }

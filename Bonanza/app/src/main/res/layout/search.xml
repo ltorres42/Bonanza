@@ -80,14 +80,6 @@
         android:text="Account"
         android:onClick="account_setting"/>
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="TextView"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-        <!--android:layout_below="@+id/button25" -->
 
     <Button
         android:id="@+id/enterbutton"
@@ -108,5 +100,27 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@id/textView14"
         />
+
+    <Button
+        android:id="@+id/jump"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip Time"
+        android:layout_above="@+id/editText9"
+        android:layout_toRightOf="@+id/editText9"
+        android:layout_toEndOf="@+id/editText9" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/downbutton">
+        <TextView
+            android:id="@+id/mytextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
 
 </RelativeLayout>

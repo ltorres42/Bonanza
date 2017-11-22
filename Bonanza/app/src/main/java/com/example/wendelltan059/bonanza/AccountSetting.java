@@ -17,11 +17,5 @@ public class AccountSetting extends AppCompatActivity {
         setContentView(R.layout.accountsettings);
     }
 
-    public void logout (View view)
-    {
-        Intent intent = new Intent(AccountSetting.this, MainActivity.class);
-        startActivity(intent);
-
-    }
 }
 
