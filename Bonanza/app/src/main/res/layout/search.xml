@@ -10,14 +10,14 @@
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/enterbutton"
-        android:layout_marginTop="15dp"
         android:background="@android:drawable/arrow_up_float"
         android:onClick="Search"
         android:textIsSelectable="true"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/downbutton"
+        android:layout_alignBottom="@+id/downbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:id="@+id/textView14"
@@ -34,14 +34,14 @@
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/upbutton"
-        android:layout_alignBottom="@+id/upbutton"
-        android:layout_toLeftOf="@+id/upbutton"
-        android:layout_toStartOf="@+id/upbutton"
         android:background="@android:drawable/arrow_down_float"
         android:onClick="Search"
         android:textIsSelectable="true"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/editText9"
+        android:layout_alignBottom="@+id/editText9"
+        android:layout_toLeftOf="@+id/upbutton"
+        android:layout_toStartOf="@+id/upbutton" />
 
     <EditText
         android:id="@+id/editText9"
@@ -89,8 +89,8 @@
         android:onClick="onFocusChange"
         android:text="Enter"
         android:layout_alignBottom="@+id/editText9"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_toLeftOf="@+id/jump"
+        android:layout_toStartOf="@+id/jump" />
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/youtube_view"
@@ -106,16 +106,17 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Skip Time"
-        android:layout_above="@+id/editText9"
-        android:layout_toRightOf="@+id/editText9"
-        android:layout_toEndOf="@+id/editText9" />
+        android:text="Skip T0"
+        android:layout_alignBaseline="@+id/enterbutton"
+        android:layout_alignBottom="@+id/enterbutton"
+        android:layout_toLeftOf="@+id/downbutton" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/downbutton">
+        android:layout_below="@+id/downbutton"
+        android:id="@+id/scrollView2">
         <TextView
             android:id="@+id/mytextview"
             android:layout_width="match_parent"
