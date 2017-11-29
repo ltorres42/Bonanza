@@ -12,7 +12,9 @@
         <activity android:name="AccountSetting"></activity>
         <activity android:name="Catalogs"></activity>
         <activity android:name="Home"></activity>
-        <activity android:name="Search"></activity>
+        <activity android:name="Search"
+                  android:windowSoftInputMode="adjustPan">
+        </activity>
         <activity android:name="Settings"></activity>
 
         <activity android:name=".Videos">
@@ -21,7 +23,7 @@
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
-    </activity>
+        </activity>
 
     </application>
 

@@ -3,9 +3,12 @@ package com.example.wendelltan059.bonanza;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,28 +50,51 @@ public class Search extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
     private YouTubePlayer player;
 
+//    @SuppressWarnings("deprecation")
+//    public static Spanned fromHtml(String html){
+//        Spanned result;
+//        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+//            result = Html.fromHtml(html,Html.FROM_HTML_MODE_LEGACY);
+//        } else {
+//            result = Html.fromHtml(html);
+//        }
+//        return result;
+//    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search);
-//
+
         youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubeView.initialize(Config.YOUTUBE_API_KEY, this);
 
         Intent intent = getIntent();
         video_ID = intent.getStringExtra("key1");
 
+        final TextView tView = (TextView) findViewById(R.id.mytextview);
 
-        // CODE TO SKIP THE PART OF THE VIDEO BASED ON THE GET-TIME RESULT;
+        InputStream inputStream = getResources().openRawResource(R.raw.cc);
+        final ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
-        // Button buttonToSeek = (Button) findViewById(R.id.button_to_seek); // basically a NEXT Button
-        // buttonToSeek.setOnClickListener(new View.OnClickListener() {
-        // @Override
-        // public void onClick(View view) {
-        // int skipToSeconds = (the gettime result);
-        // player.seekToMillis(skipToSeconds * 1000);
-        // }
-        // });
+        final String myText = "";
+        int in;
+        try {
+            in = inputStream.read();
+            while (in != -1)
+            {
+                byteArrayOutputStream.write(in);
+                in = inputStream.read();
+            }
+            inputStream.close();
+
+            byteArrayOutputStream.toString();
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        tView.setText(byteArrayOutputStream.toString());
+
 
         fileLoad = new CCLoader("cc.txt", this);
 
@@ -86,31 +112,20 @@ public class Search extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
                         keyword = edit_text.getText().toString();
                         setKeyword = new searchFunctions(keyword);
                         resultArray = setKeyword.searchForKeyword(textArray);
-                        TextView tView = (TextView) findViewById(R.id.mytextview);
+                        final TextView searchView = (TextView) findViewById(R.id.mytextview);
 
-                        InputStream inputStream = getResources().openRawResource(R.raw.cc);
-                        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-
-                        String myText = "";
-                        int in;
-                        try {
-                            in = inputStream.read();
-                            while (in != -1)
-                            {
-                                byteArrayOutputStream.write(in);
-                                in = inputStream.read();
-                            }
-                            inputStream.close();
-
-                            myText = byteArrayOutputStream.toString();
-                        }catch (IOException e) {
-                            e.printStackTrace();
-                        }
-
-                        tView.setText(myText);
+//                        String textString = new String();
+//
+//                        for (int i = 0; i<textArray.size(); i++)
+//                        {
+//                            textString = textString + textArray.get(i);
+//                            textString = textString + "\n";
+//                        }
+//
+//                        searchView.setText(textString);
 
                         if(resultArray.isEmpty()){
-                            //tView.setText("Keyword not found...");
+                            searchView.setText("Keyword not found...");
                             Button downButton = (Button) findViewById(R.id.downbutton);
                             downButton.setOnClickListener(new View.OnClickListener() {
 
@@ -119,7 +134,6 @@ public class Search extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
                                 }
                             });
 
-                            //skip back up through keyword occurances
                             Button upButton = (Button) findViewById(R.id.upbutton);
                             upButton.setOnClickListener(new View.OnClickListener() {
 
@@ -129,41 +143,71 @@ public class Search extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
                             });
                         }
                         else {
-                            //tView.setText(keyword);
+                            //searchView.setText(keyword);
+                            tView.setText(byteArrayOutputStream.toString());
                             resultIndex = 0;
-                            //tView.setText(textArray.get(resultArray.get(resultIndex)));
-                            //skip down through keyword occurances
+//                            String newText = myText.replaceAll(textArray.get(resultArray.get(resultIndex)),"<font color='red'>"+textArray.get(resultArray.get(resultIndex))+"</font>");
+//
+//                            searchView.setText(Html.fromHtml(newText));
+
+                            final ScrollView s = (ScrollView) findViewById(R.id.scrollView2);
+
+                            s.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    int y = searchView.getLayout().getLineTop(resultArray.get(resultIndex));
+                                    s.scrollTo(0, y);
+                                }
+                            });
+                            //searchView.setText(textArray.get(resultArray.get(resultIndex)));
 
                             Button downButton = (Button) findViewById(R.id.downbutton);
                             downButton.setOnClickListener(new View.OnClickListener() {
 
                                 @Override
                                 public void onClick(View view) {
-                                    //TextView tView = (TextView) findViewById(R.id.textView17);
-                                    //tView.setText("down button pressed");
+                                    //final TextView searchView = (TextView) findViewById(R.id.mytextview);
                                     resultIndex = (resultIndex + 1) % resultArray.size();
-                                    //tView.setText(textArray.get(resultArray.get(resultIndex)));
+                                    //searchView.setText(textArray.get(resultArray.get(resultIndex)));
+
+                                    final ScrollView s = (ScrollView) findViewById(R.id.scrollView2);
+
+                                    s.post(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            int y = searchView.getLayout().getLineTop(resultArray.get(resultIndex));
+                                            s.scrollTo(0, y);
+                                        }
+                                    });
                                 }
 
                             });
 
-                            //skip back up through keyword occurances
                             Button upButton = (Button) findViewById(R.id.upbutton);
                             upButton.setOnClickListener(new View.OnClickListener() {
 
                                 @Override
                                 public void onClick(View v) {
-                                    //TextView tView = (TextView) findViewById(R.id.textView17);
+                                    //final TextView searchView = (TextView) findViewById(R.id.mytextview);
                                     if(resultIndex == 0)
                                     {
                                         resultIndex = resultArray.size()-1;
-                                        //tView.setText(textArray.get(resultArray.get(resultIndex)));
+                                        //searchView.setText(textArray.get(resultArray.get(resultIndex)));
                                     }
                                     else
                                     {
                                         resultIndex = (resultIndex - 1);
-                                        //tView.setText(textArray.get(resultArray.get(resultIndex)));
-                                        //tView.setText("up button pressed");
+                                        //searchView.setText(textArray.get(resultArray.get(resultIndex)));
+
+                                        final ScrollView s = (ScrollView) findViewById(R.id.scrollView2);
+
+                                        s.post(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                int y = searchView.getLayout().getLineTop(resultArray.get(resultIndex));
+                                                s.scrollTo(0, y);
+                                            }
+                                        });
                                     }
                                 }
                             });
@@ -175,16 +219,7 @@ public class Search extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
                                 public void onClick(View v) {
                                     newTimeObject = new getTime();
                                     int time = newTimeObject.time(resultArray.get(resultIndex), timeStampsArray);
-                                    //call display video with time as the parameter here
-                                    //next two lines for testing and can be commented out after
-                                    //linking up
-                                    //String strTime = Integer.toString(time);
-                                    //TextView tView = (TextView) findViewById(R.id.textView17);
-                                    //tView.setText(strTime);
-                                    //tView.setText(timeStampsArray.get(resultIndex));
                                     player.seekToMillis(time * 1000);
-//                                    int milliSeconds = (time * 1000);
-//                                   // player.loadVideo(video_ID, milliSeconds);
                                 }
                             });
                         }
@@ -236,58 +271,4 @@ public class Search extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
         return youTubeView;
     }
 
-//    public Search()
-//    {
-//
-//    }
-//    public Search(String keyword)
-//    {
-//        this.keyword = keyword;
-//    }
-//    public ArrayList<Integer> getResultArray()  {
-//
-//        return resultArray;
-//    }
-//    private void searchForKeyword()
-//    {
-//        resultArray = new ArrayList<Integer>();
-//
-//        if(!textArray.isEmpty())
-//        {
-//            for (int i = 0; i < textArray.size(); i ++)
-//            {
-//                if(textArray.get(i).contains(keyword))
-//                {
-//                    resultArray.add(i);
-//                }
-//            }
-//        }
-//        else
-//        {
-//            System.out.println("No input from text file.");
-//            System.exit(1);
-//        }
-//    }
-//
-//    private void displayResultArray()
-//    {
-//        if(!resultArray.isEmpty())
-//        {
-//            for (int i = 0; i < resultArray.size(); i ++)
-//            {
-//                System.out.println(resultArray.get(i));
-//            }
-//        }
-//    }
-//
-//    public static void main(String[] args) {
-//
-//        System.out.println("What keyword or phrase are you looking for?");
-//        Scanner scan = new Scanner(System.in);
-//        String keyword = scan.nextLine();
-//        Search setKeyword = new Search(keyword);
-//        setKeyword.searchForKeyword();
-//        setKeyword.displayResultArray();
-//
-//    }
 }
