@@ -60,7 +60,7 @@ public class Videos extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
     {
         this.input = (EditText) findViewById(R.id.editText8);
         this.link = input.getText().toString();
-        String [] parts = link.split("=");
+        String [] parts = link.split("be/");
         part2 = parts[1];
         youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubeView.initialize(Config.YOUTUBE_API_KEY, this);
